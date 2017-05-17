@@ -1,0 +1,24 @@
+Short work description
+
+1. The line with type of vehicle name is added to text file. Type of vehicle are  car and golf cart.
+2. Array converted to ArryList for Options and OptionSet class attributes
+3. Automobile class converted to abstract class with Car and GolfCart subclasses
+4. New class Fleet holds all Automobile's objects from all read files as LinkedHashMap with vehicle as value and its model name as key
+5. Fleet class converted into generic LinkedHashMap class holds <String, T>, where T may by any type of vehicle
+
+
+6. The simple sequence of steps for the program is next: 
+1) read text file (method called from Driver)
+2) define the type of vehicle and create Automobile object as type Car or GolfCart
+3) store all information from text file into Automobile subclass object
+4) add this vehicle to Fleet LinkedHashMap and display notice if object hasn't been added
+4) do the same steps 2 and 3 for the next one text file (method called from Driver)
+5) for each Automobile subclass object find the model name, add pair (model name and filled Automobile subclass objects) to Fleet LinkedHashMap
+6) for chosen model (predefine in Driver) look for Automobile subclass object from Fleet LinkedHashMap
+5) display set of option and ask user for choice (Scanner used)
+6) chosen option stored in  ArryList choice in Automobile subclass
+7) search for price of this option in Automobile subclass object's options and add this number (price) to total (first time it's a basic) price. update
+8) repeat steps 5, 6 and 7 for each option set
+9) display total price
+10) check the length of LinkedHashMap
+11) traverse through LinkedHashMap and by given name (method called from Driver) to find chosen model. Display all model's features 
